@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
-export const WrapList = styled.div`
-position: relative;
+export const List = styled.ul`
+margin-top: 20px;
 `;
+export const Item = styled.li`
+:not(:first-child){
+  margin-top: 15px;
+}
 
-export const Img = styled.img`
-position: absolute;
-top: 0;
-right:0;
+:nth-child(2n+1){
+ background-color: #f3ba36;
+}
 `;

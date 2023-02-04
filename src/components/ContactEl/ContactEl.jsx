@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import {ElWraper, ElButton} from './ContactEl.styled'
 
 export const ContactEl = ({name, number, onDelete}) => {
   return (
-    <div>
+    <ElWraper>
       <p>{name}:</p>
         <span>{number}</span>
-        <button type='buttn'
+        <ElButton type='buttn'
           onClick={onDelete}
-        >Delete</button>
-    </div>
+        >Delete</ElButton>
+    </ElWraper>
   )
 }
 

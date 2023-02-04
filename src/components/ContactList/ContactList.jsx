@@ -1,24 +1,20 @@
 import PropTypes from 'prop-types';
 import { ContactEl } from 'components/ContactEl';
-import phonebook from "../../img/phonebook.png"
-import {WrapList} from './ContactList.styled'
+import {ListWrap, Img, List, Item } from './ContactList.styled'
 
 export const ContactList = ({ contacts, onDelete }) => {
   return (
-    <WrapList>
-      <img src={phonebook} alt={"phonebook"}/>
-    <ul>
+    <List>
       {contacts.map(({ id, name, number }) => (
-        <li key={id}>
+        <Item  key={id}>
           <ContactEl
             name={name}
             number={number}
             onDelete={() => onDelete(id)}
           />
-        </li>
+        </Item>
       ))}
-      </ul>
-      </WrapList>
+      </List>
   );
 };
 
