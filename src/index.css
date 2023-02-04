@@ -9,12 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
-  background-image:url(./img/org.kde.phonebook.svg.png);
-    background-size: contain;
-     height: 100vh;
-     
-
-    background-repeat: no-repeat;
 }
 
 code {
