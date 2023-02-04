@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { ContactEl } from 'components/ContactEl';
-import {ListWrap, Img, List, Item } from './ContactList.styled'
+import {List, Item } from './ContactList.styled'
 
 export const ContactList = ({ contacts, onDelete }) => {
   return (
