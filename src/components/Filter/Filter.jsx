@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
-import {FilterLabel, FilterInput} from './Filter.styled'
+import { FilterInput} from './Filter.styled'
 
 export const FilterContacts = ({ value, onChange }) => {
   const filterId = nanoid();
 
   return (
-    <FilterLabel htmlFor={filterId}>
+    <label htmlFor={filterId}>
       Find contacts by name
       <FilterInput
         id={filterId}
@@ -16,7 +16,7 @@ export const FilterContacts = ({ value, onChange }) => {
         value={value}
         onChange={onChange}
       />
-    </FilterLabel>
+    </label>
   )
 };
 
