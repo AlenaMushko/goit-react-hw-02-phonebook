@@ -23,11 +23,11 @@ color: ${theme.colors.dark};
 export const FormButton = styled.button`
 padding:4px;
 font-size:16px;
+border:2px solid ${theme.colors.light};
 transition: background-color ${theme.animation.cubicBezier}, 
-color ${theme.animation.cubicBezier}, border ${theme.animation.cubicBezier};
+color ${theme.animation.cubicBezier};
 :hover {
   background-color: ${theme.colors.light}; 
   color: ${theme.colors.accent};
-  border:2px solid ${theme.colors.accent};
 }
 `;

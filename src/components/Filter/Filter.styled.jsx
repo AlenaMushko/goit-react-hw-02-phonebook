@@ -10,8 +10,5 @@ color: ${theme.colors.dark};
 :hover, :focus{
   outline:none;
 }
-  
- 
-
 `;
 
