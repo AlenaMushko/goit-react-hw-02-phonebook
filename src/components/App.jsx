@@ -24,13 +24,10 @@ export class App extends Component {
       number,
     };
     const { contacts } = this.state;
-    for (let contact of contacts) {
-      if (contact.name === name) {
-        alert(`${name} is alreadi in contacts`);
-        return;
-      }
-    };
-    this.setState(({ contacts }) => ({ contacts: [contact, ...contacts] }));
+    const isContactRecorded = contacts.find(contact =>contact.name.toLowerCase() === name.toLowerCase())
+    isContactRecorded
+      ? alert(`${name} is alreadi in contacts`)
+      : this.setState(({ contacts }) => ({ contacts: [contact, ...contacts] }));    
   };
 
   visibleContacts = () => {
