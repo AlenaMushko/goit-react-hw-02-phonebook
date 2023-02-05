@@ -1,31 +1,33 @@
 import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 
 export const Form = styled.form`
  display: flex;
- gap:30px;
+ gap:40px;
  margin:30px 0;
  padding: 60px;
- border: 2px solid  rgb(8, 8, 118);
+ border: 2px solid  ${theme.colors.yellow};
 `;
 
 export const FormInput = styled.input`
 margin-left: 15px;
 border:none;
-font-size:18px;
+font-size:${theme.fontSizes.medium};
+background-color: ${theme.colors.yellow};
+color: ${theme.colors.dark};
 :hover, :focus{
   outline:none;
-  border: 2px solid  #f3ba36;
 }
 `;
 
 export const FormButton = styled.button`
 padding:4px;
 font-size:16px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color ${theme.animation.cubicBezier}, 
+color ${theme.animation.cubicBezier}, border ${theme.animation.cubicBezier};
 :hover {
-  background-color: white; 
-  color:rgb(8, 8, 118);
-  border:2px solid rgb(8, 8, 118);
+  background-color: ${theme.colors.light}; 
+  color: ${theme.colors.accent};
+  border:2px solid ${theme.colors.accent};
 }
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 
 export const ElWraper = styled.div`
 display: flex;
@@ -7,12 +8,12 @@ align-items: center;
 `;
 
 export const ElButton = styled.button`
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border:2px solid ${theme.colors.light};
+transition: background-color ${theme.animation.cubicBezier}, 
+color ${theme.animation.cubicBezier};
 :hover {
-  background-color: white; 
-  color:rgb(8, 8, 118);
-  border:2px solid rgb(8, 8, 118);
+background-color: ${theme.colors.light}; 
+  color: ${theme.colors.accent};
 }
 `;
 

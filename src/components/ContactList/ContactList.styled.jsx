@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 
 export const List = styled.ul`
 margin-top: 20px;
@@ -9,6 +10,6 @@ export const Item = styled.li`
 }
 
 :nth-child(2n+1){
- background-color: #f3ba36;
+ background-color: ${theme.colors.yellow};
 }
 `;
